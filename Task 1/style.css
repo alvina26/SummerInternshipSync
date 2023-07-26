@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    background: linear-gradient(90deg, #696969 50%, #000 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: #dddddd;
+    width: 90%;
+    height: 90vh;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+    float: left;
+    justify-content: space-between;
+    margin-left: -100px;
+    
+    
+
+}
+.navbar .logo::before{
+    content: "Muse";
+    color: transparent;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%) ;
+    font-family: 'Fasthand', cursive;
+    margin-right: 30px;
+    justify-content: left;
+    justify-content: space-between;
+    float: left;
+   
+    
+
+}
+.navbar{
+    
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    margin-left: 50px;
+}
+.navbar , .navlist{
+    display: flex;
+justify-content: right;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 80px;
+}
+.navlist a{
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+}
+.navlist a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+    justify-content: space-between;
+
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+.hero{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.hero img{
+    width: 60vw;
+    height: 300px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 5px solid black;
+    padding: 30px 50px;
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+.content h3{
+    color: rgb(73, 73, 73);
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-align: center;
+
+}
+.content h1{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2;
+
+}
+.content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.content button{
+    padding:  15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    align-items: right;
+    margin-top: 10px;
+    margin-left: 130px;
+
+}
+.content button:hover{
+    background-color: white;
+    color: black;
+}
